@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer stateless color="primary" dark v-model="drawer" width="200" app>
+  <v-navigation-drawer mobile-breakpoint="10024" color="primary" dark v-model="drawer" width="230" app>
     <v-list expand nav tile>
       <v-list-item-group v-model="selectedItem">
         <v-list-item v-for="(item, i) in items" :key="i" :to="`${item.to}`">

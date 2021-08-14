@@ -3,11 +3,19 @@
     <div class="container">
       <div class="footer mb-6">
         <div class="text-center">
-          <img src="../assets/logo.png" height="100" alt="" srcset="">
+          <img src="../assets/logo.jpg" height="100" alt="Birgunj Updates Logo">
           <div class="mt-4 d-flex flex-wrap justify-center" style="grid-gap: 8px;">
             <v-btn icon v-for="(social, i) in socials" :key="i" class="white primary--text" target="_blank" :href="social.to">
               <v-icon size="18">{{ social.icon }}</v-icon>
             </v-btn>  
+          </div>
+        </div>
+        <div>
+          <div class="footer__content__title">
+            <span>Category</span>
+          </div>  
+          <div class="d-flex flex-column">
+            <span v-for="(c, i) in category" :key="i">{{ c }}</span>  
           </div>
         </div>
         <div>
@@ -50,6 +58,7 @@ export default {
       { icon: 'mdi-linkedin', to: 'https://www.facebook.com' },
       { icon: 'mdi-instagram', to: 'https://www.facebook.com' }
     ],
+    category: ['Entertainment', 'Politics', 'Health & Fitness', 'Education', 'Crime', 'Economics', 'Sports'],
     company: [
       { title: 'About Us', to: '/' },
       { title: 'Careers', to: '/' },
@@ -81,8 +90,8 @@ export default {
 .footer {
   display: grid;
   grid-gap: 12px;
-  /* grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));   */
-  grid-template-columns: 22% 13% 18% 14%  29%;  
+  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));  
+  /* grid-template-columns: 22% 13% 18% 14%  29%;   */
 }
 
 .footer__content__title {

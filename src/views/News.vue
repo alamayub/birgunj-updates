@@ -1,6 +1,6 @@
 <template>
   <div class="News">
-    <div class="news__container container px-0">
+    <div class="news__container container">
       <div class="news__item" v-for="(n ,i) in  news" :key="i" @click="more(n)" data-aos="zoom-in">
         <div class="news__item__img">
           <v-img v-if="n.image != null" :src="n.image" :lazy-src="n.image" :alt="n.title" class="img" />
@@ -51,11 +51,11 @@ export default {
 .news__item {
   transition: 250ms;
   overflow: hidden;
-  border: .5px solid rgb(0 0 0 / 8%);
+  border: .5px solid rgb(0 0 0 / 10%);
   cursor: pointer;
 }
 .news__item:hover {
-  box-shadow: 0 1px 20px 0 rgb(0 0 0 / 20%);  
+  box-shadow: 0 1px 15px 0 rgb(0 0 0 / 15%);  
   border-radius: 4px;  
   border: .5px solid transparent;
 }

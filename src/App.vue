@@ -6,7 +6,9 @@
     <Navbar />
     <Sidebar />
     <v-main>
-      <router-view/>
+      <keep-alive>
+        <router-view :key="$route.fullPath" />
+      </keep-alive>
     </v-main>
     <Footer />
   </v-app>

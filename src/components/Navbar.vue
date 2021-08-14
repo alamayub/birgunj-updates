@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="white" elevate-on-scroll>
-    <div class="container d-flex align-center px-0">
+    <div class="container d-flex justify-space-between align-center px-0 px-lg-2">
       <v-img alt="Spell Innovation Logo" class="shrink" contain src="../assets/logo.png" transition="scale-transition" width="55" />
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="setDrawer(!drawer)" class="d-block d-sm-block d-md-none secondary--text"></v-app-bar-nav-icon>
