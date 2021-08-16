@@ -54,9 +54,9 @@ export default {
   data: () => ({
     socials: [
       { icon: 'mdi-facebook', to: 'https://www.facebook.com' },
-      { icon: 'mdi-twitter', to: 'https://www.facebook.com' },
-      { icon: 'mdi-linkedin', to: 'https://www.facebook.com' },
-      { icon: 'mdi-instagram', to: 'https://www.facebook.com' }
+      { icon: 'mdi-twitter', to: 'https://www.twitter.com' },
+      { icon: 'mdi-youtube', to: 'https://www.youtube.com' },
+      { icon: 'mdi-instagram', to: 'https://www.instagram.com' }
     ],
     category: ['Entertainment', 'Politics', 'Health & Fitness', 'Education', 'Crime', 'Economics', 'Sports'],
     company: [
@@ -65,10 +65,6 @@ export default {
       { title: 'News', to: '/' },
       { title: 'Blog', to: '/' },
       { title: 'Contact us', to: '/' },
-    ],
-    spell: [
-      { title: 'About', to: '/' },
-      { title: 'Activities', to: '/' },
     ], 
     contacts: [
       { icon: 'mdi-map-marker', title: 'Panitanki-10, Birgunj' },
